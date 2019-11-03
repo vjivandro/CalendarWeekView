@@ -172,6 +172,7 @@ public class WeekCalendar extends LinearLayout {
                     case "Sat": namaHari = "SAB"; break;
                     case "Sun": namaHari = "MIN"; break;
                 }
+
                 day.setText(namaHari);
 
                 if (typedArray != null) {
