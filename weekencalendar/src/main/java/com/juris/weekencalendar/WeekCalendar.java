@@ -65,11 +65,13 @@ public class WeekCalendar extends LinearLayout {
     private void init(AttributeSet attrs) {
         if (attrs != null) {
             typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.WeekCalendar);
-            int selectedDateColor = typedArray.getColor(R.styleable.WeekCalendar_selectedBgColor, ContextCompat.getColor(getContext(), android.R.color.holo_blue_light));
-            int todayDateColor = typedArray.getColor(R.styleable.WeekCalendar_todaysDateBgColor, ContextCompat.getColor(getContext(), android.R.color.holo_blue_dark));
+            int selectedDateColor = typedArray.getColor(R.styleable.WeekCalendar_selectedBgColor, ContextCompat.getColor(getContext(), R
+                    .color.colorBlueDark));
+            int todayDateColor = typedArray.getColor(R.styleable.WeekCalendar_todaysDateBgColor, ContextCompat.getColor(getContext(), R
+                    .color.colorBlue));
             int daysTextColor = typedArray.getColor(R.styleable .WeekCalendar_daysTextColor, Color.BLACK);
             float daysTextSize = typedArray.getDimension(R.styleable.WeekCalendar_daysTextSize, -1);
-            int todayDateTextColor = typedArray.getColor(R.styleable.WeekCalendar_todaysDateTextColor, ContextCompat.getColor(getContext(), android.R.color.black));
+            int todayDateTextColor = typedArray.getColor(R.styleable.WeekCalendar_todaysDateTextColor, ContextCompat.getColor(getContext(), android.R.color.white));
 
             setDayDecorator(new DefaultDayDecorator(getContext(),
                     selectedDateColor,

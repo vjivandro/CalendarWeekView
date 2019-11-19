@@ -11,7 +11,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0.6"
+        versionName "1.0.7"
     }
 
     buildTypes {
@@ -35,7 +35,7 @@ dependencies {
 }
 
 group = 'com.juris.weekencalendar'
-version = '1.0.6'
+version = '1.0.7'
 
 task generateSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -62,10 +62,10 @@ bintray {
         name = 'CalendarWeekView'
 
         version {
-            name = '1.0.6'
+            name = '1.0.7'
             desc = 'CalendarWeekView'
             released  = new Date()
-            vcsTag = '1.0.6'
+            vcsTag = '1.0.7'
         }
 
         licenses = ['Apache-2.0']
