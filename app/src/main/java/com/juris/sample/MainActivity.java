@@ -2,6 +2,7 @@ package com.juris.sample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.juris.weekencalendar.WeekCalendar;
@@ -21,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
         weekCalendar.setOnDateClickListener(new OnDateClickListener() {
             @Override
             public void onDateClick(DateTime dateTime) {
-                Toast.makeText(MainActivity.this, "You Selected " + dateTime.toString(), Toast
-                        .LENGTH_SHORT).show();
+                Log.e("TAG", "You Selected " + dateTime.toString());
             }
 
         });
