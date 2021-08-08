@@ -3,6 +3,7 @@ package com.juris.weekencalendar.fragment;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -160,6 +161,7 @@ public class WeekFragment extends Fragment {
             DateTime dateTime = getItem(position).withMillisOfDay(0);
 
             TextView dayTextView = (TextView) convertView.findViewById(R.id.daytext);
+            dayTextView.setTextColor(Color.parseColor("#00581D"));
             dayTextView.setText(String.valueOf(dateTime.getDayOfMonth()));
 
             BusProvider.getInstance().post(new Event.OnDayDecorateEvent(convertView, dayTextView,

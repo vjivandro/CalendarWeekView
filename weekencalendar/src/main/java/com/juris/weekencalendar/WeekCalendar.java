@@ -69,9 +69,9 @@ public class WeekCalendar extends LinearLayout {
                     .color.colorBlueDark));
             int todayDateColor = typedArray.getColor(R.styleable.WeekCalendar_todaysDateBgColor, ContextCompat.getColor(getContext(), R
                     .color.colorBlue));
-            int daysTextColor = typedArray.getColor(R.styleable .WeekCalendar_daysTextColor, Color.BLACK);
+            int daysTextColor = typedArray.getColor(R.styleable .WeekCalendar_daysTextColor, Color.parseColor("#00581D"));
             float daysTextSize = typedArray.getDimension(R.styleable.WeekCalendar_daysTextSize, -1);
-            int todayDateTextColor = typedArray.getColor(R.styleable.WeekCalendar_todaysDateTextColor, ContextCompat.getColor(getContext(), android.R.color.white));
+            int todayDateTextColor = typedArray.getColor(R.styleable.WeekCalendar_todaysDateTextColor, ContextCompat.getColor(getContext(), R.color.color_orange));
 
             setDayDecorator(new DefaultDayDecorator(getContext(),
                     selectedDateColor,
@@ -175,7 +175,7 @@ public class WeekCalendar extends LinearLayout {
 
                 if (typedArray != null) {
                     day.setTextColor(typedArray.getColor(R.styleable.WeekCalendar_weekTextColor,
-                            Color.BLACK));
+                            Color.parseColor("#00581D")));
                     day.setTextSize(TypedValue.COMPLEX_UNIT_PX, typedArray.getDimension(R.styleable
                             .WeekCalendar_weekTextSize, day.getTextSize()));
                 }
