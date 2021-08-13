@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     tools:context=".MainActivity">
 
     <com.juris.weekencalendar.WeekCalendar
         android:id="@+id/weekCalendar"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="75dp"
         app:dayNameLength="threeLetters"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:numOfPages="150" />
-
 </android.support.constraint.ConstraintLayout>

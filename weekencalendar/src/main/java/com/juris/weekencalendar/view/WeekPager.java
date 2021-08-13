@@ -88,7 +88,7 @@ public class WeekPager extends ViewPager {
         setCurrentItem(pos);
         if (typedArray != null)
             setBackgroundColor(typedArray.getColor(R.styleable.WeekCalendar_daysBackgroundColor,
-                    ContextCompat.getColor(getContext(), android.R.color.white)));
+                    ContextCompat.getColor(getContext(), R.color.color_orange)));
         if (WeekFragment.selectedDateTime == null)
             WeekFragment.selectedDateTime = new DateTime();
     }
